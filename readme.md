@@ -18,6 +18,7 @@ Skins for CreArts Skin System
 **Lavender**
 ```
 @import url("https://crearts-community.github.io/skins/community/lavender.css");
+```
 
 ## Discord
 
@@ -37,6 +38,7 @@ Skins for CreArts Skin System
 ```
 @import url("https://crearts-community.github.io/skins/discord/modern.css");
 ```
+
 ## Custom
 
 ## Public
