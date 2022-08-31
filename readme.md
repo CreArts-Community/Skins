@@ -5,38 +5,38 @@ Skins for CreArts Skin System
 
 **CreArts**
 ```
-@import url("https://crearts-community.github.io/skins/community/crearts.css");
+@import url("https://crearts-community.github.io/Skins/community/crearts.css");
 ```
 **Goon**
 ```
-@import url("https://crearts-community.github.io/skins/community/goon.css");
+@import url("https://crearts-community.github.io/Skins/community/goon.css");
 ```
 **Nebula**
 ```
-@import url("https://crearts-community.github.io/skins/community/nebula.css");
+@import url("https://crearts-community.github.io/Skins/community/nebula.css");
 ```
 **Lavender**
 ```
-@import url("https://crearts-community.github.io/skins/community/lavender.css");
+@import url("https://crearts-community.github.io/Skins/community/lavender.css");
 ```
 
 ## Discord
 
 **Default**
 ```
-@import url("https://crearts-community.github.io/skins/discord/default.css");
+@import url("https://crearts-community.github.io/Skins/discord/default.css");
 ```
 **Blurple**
 ```
-@import url("https://crearts-community.github.io/skins/discord/blurple.css");
+@import url("https://crearts-community.github.io/Skins/discord/blurple.css");
 ``` 
 **Revamp**
 ```
-@import url("https://crearts-community.github.io/skins/discord/revamp.css");
+@import url("https://crearts-community.github.io/Skins/discord/revamp.css");
 ```
 **Modern**
 ```
-@import url("https://crearts-community.github.io/skins/discord/modern.css");
+@import url("https://crearts-community.github.io/Skins/discord/modern.css");
 ```
 
 ## Custom
