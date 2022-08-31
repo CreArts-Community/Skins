@@ -1,59 +1,59 @@
 :root {
     /* Info */
-    --SKIN-skin: "Amoled Edition";
-    --SKIN-author: "Obscure#4719";
+    --SKIN-skin: "Amoled Edition" !important;
+    --SKIN-author: "Obscure#4719" !important;
 }
 
 .theme-dark,
 .theme-light {
     /* Lightness */
-    --SKIN-lightness: 0%;
+    --SKIN-lightness: 0% !important;
 
     /* Grading */
-    --SKIN-grading-primary: 0%;
-    --SKIN-grading-secondary: -3%;
-    --SKIN-grading-tertiary: -6%;
-    --SKIN-grading-quarternary: -15%;
+    --SKIN-grading-primary: 0% !important;
+    --SKIN-grading-secondary: -3% !important;
+    --SKIN-grading-tertiary: -6% !important;
+    --SKIN-grading-quarternary: -15% !important;
 
     /* Interactive */
-    --SKIN-interactive-h: 213;
-    --SKIN-interactive-s: 13%;
-    --SKIN-interactive-l: 75%;
-    --SKIN-interactive-a: 1.0;
+    --SKIN-interactive-h: 213 !important;
+    --SKIN-interactive-s: 13% !important;
+    --SKIN-interactive-l: 75% !important;
+    --SKIN-interactive-a: 1.0 !important;
 
     /* Background */
-    --SKIN-background-h: 0;
-    --SKIN-background-s: 0%;
-    --SKIN-background-l: 0%;
-    --SKIN-background-a: 1.0;
-    --background-floating: var(--background-secondary);
+    --SKIN-background-h: 0 !important;
+    --SKIN-background-s: 0% !important;
+    --SKIN-background-l: 0% !important;
+    --SKIN-background-a: 1.0 !important;
+    --background-floating: var(--background-secondary) !important;
     /* Accent */
-    --SKIN-accent-h: 241;
-    --SKIN-accent-s: 100%;
-    --SKIN-accent-l: 68%;
-    --SKIN-accent-a: 1.0;
+    --SKIN-accent-h: 241 !important;
+    --SKIN-accent-s: 100% !important;
+    --SKIN-accent-l: 68% !important;
+    --SKIN-accent-a: 1.0 !important;
 
     /* Green */
-    --SKIN-green-h: 144;
-    --SKIN-green-s: 95%;
-    --SKIN-green-l: 43%;
-    --SKIN-green-a: 1.0;
+    --SKIN-green-h: 144 !important;
+    --SKIN-green-s: 95% !important;
+    --SKIN-green-l: 43% !important;
+    --SKIN-green-a: 1.0 !important;
 
     /* Yellow */
-    --SKIN-yellow-h: 49;
-    --SKIN-yellow-s: 95%;
-    --SKIN-yellow-l: 50%;
-    --SKIN-yellow-a: 1.0;
+    --SKIN-yellow-h: 49 !important;
+    --SKIN-yellow-s: 95% !important;
+    --SKIN-yellow-l: 50% !important;
+    --SKIN-yellow-a: 1.0 !important;
 
     /* Red */
-    --SKIN-red-h: 354;
-    --SKIN-red-s: 95%;
-    --SKIN-red-l: 50%;
-    --SKIN-red-a: 1.0;
+    --SKIN-red-h: 354 !important;
+    --SKIN-red-s: 95% !important;
+    --SKIN-red-l: 50% !important;
+    --SKIN-red-a: 1.0 !important;
 
     /* Purple */
-    --SKIN-purple-h: 278;
-    --SKIN-purple-s: 100%;
-    --SKIN-purple-l: 50%;
-    --SKIN-purple-a: 1.0;
+    --SKIN-purple-h: 278 !important;
+    --SKIN-purple-s: 100% !important;
+    --SKIN-purple-l: 50% !important;
+    --SKIN-purple-a: 1.0 !important;
 }

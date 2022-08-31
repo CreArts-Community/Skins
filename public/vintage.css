@@ -1,68 +1,64 @@
 :root {
     /* Info */
-    --SKIN-skin: "Vintage Edition";
-    --SKIN-author: "Leeprky#2063";
+    --SKIN-skin: "Vintage Edition" !important;
+    --SKIN-author: "Leeprky#2063" !important;
 }
 
 .theme-dark,
 .theme-light {
     /* Lightness */
-    --SKIN-lightness: 0%;
+    --SKIN-lightness: 0% !important;
 
     /* Grading */
-    --SKIN-grading-primary: 3%;
-    --SKIN-grading-secondary: 0%;
-    --SKIN-grading-tertiary: -3%;
-    --SKIN-grading-quarternary: 9%;
+    --SKIN-grading-primary: 3% !important;
+    --SKIN-grading-secondary: 0% !important;
+    --SKIN-grading-tertiary: -3% !important;
+    --SKIN-grading-quarternary: 9% !important;
 
     /* Interactive */
-    --SKIN-interactive-h: 21;
-    --SKIN-interactive-s: 19%;
-    --SKIN-interactive-l: 70%;
-    --SKIN-interactive-a: 1.0;
+    --SKIN-interactive-h: 21 !important;
+    --SKIN-interactive-s: 19% !important;
+    --SKIN-interactive-l: 70% !important;
+    --SKIN-interactive-a: 1.0 !important;
 
     /* Background */
-    --SKIN-background-h: 0;
-    --SKIN-background-s: 12%;
-    --SKIN-background-l: 15%;
-    --SKIN-background-a: 1.0;
+    --SKIN-background-h: 0 !important;
+    --SKIN-background-s: 12% !important;
+    --SKIN-background-l: 15% !important;
+    --SKIN-background-a: 1.0 !important;
 
     /* Accent */
-    --SKIN-accent-h: 12;
-    --SKIN-accent-s: 47%;
-    --SKIN-accent-l: 61%;
-    --SKIN-accent-a: 1.0;
+    --SKIN-accent-h: 12 !important;
+    --SKIN-accent-s: 47% !important;
+    --SKIN-accent-l: 61% !important;
+    --SKIN-accent-a: 1.0 !important;
 
     /* Green */
-    --SKIN-green-h: 144;
-    --SKIN-green-s: 95%;
-    --SKIN-green-l: 43%;
-    --SKIN-green-a: 1.0;
+    --SKIN-green-h: 144 !important;
+    --SKIN-green-s: 95% !important;
+    --SKIN-green-l: 43% !important;
+    --SKIN-green-a: 1.0 !important;
 
     /* Yellow */
-    --SKIN-yellow-h: 49;
-    --SKIN-yellow-s: 95%;
-    --SKIN-yellow-l: 50%;
-    --SKIN-yellow-a: 1.0;
+    --SKIN-yellow-h: 49 !important;
+    --SKIN-yellow-s: 95% !important;
+    --SKIN-yellow-l: 50% !important;
+    --SKIN-yellow-a: 1.0 !important;
 
     /* Red */
-    --SKIN-red-h: 354;
-    --SKIN-red-s: 75%;
-    --SKIN-red-l: 50%;
-    --SKIN-red-a: 1.0;
+    --SKIN-red-h: 354 !important;
+    --SKIN-red-s: 75% !important;
+    --SKIN-red-l: 50% !important;
+    --SKIN-red-a: 1.0 !important;
 
     /* Purple */
-    --SKIN-purple-h: 278;
-    --SKIN-purple-s: 80%;
-    --SKIN-purple-l: 50%;
-    --SKIN-purple-a: 1.0;
+    --SKIN-purple-h: 278 !important;
+    --SKIN-purple-s: 80% !important;
+    --SKIN-purple-l: 50% !important;
+    --SKIN-purple-a: 1.0 !important;
 
     /* Extras */
-    --scrollbar-thin-thumb: var(--accent-tertiary);
-    --scrollbar-auto-thumb: var(--accent-tertiary);
-    --scrollbar-auto-scrollbar-color-thumb: var(--accent-tertiary);
-}
-
-.userPopout-2j1gM4 {
-    --background-floating: var(--background-secondary);
+    --scrollbar-thin-thumb: var(--accent-tertiary) !important;
+    --scrollbar-auto-thumb: var(--accent-tertiary) !important;
+    --scrollbar-auto-scrollbar-color-thumb: var(--accent-tertiary) !important;
 }
