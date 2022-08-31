@@ -1,6 +1,8 @@
 # Skins
 Skins for CreArts Skin System
 
+working with [CreArts](https://github.com/CreArts-Community/CreArts-Discord) and [Lavender](https://github.com/Lavender-Discord/Lavender) so far.
+
 ## Communtiy
 
 **CreArts**
