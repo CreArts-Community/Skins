@@ -1,0 +1,77 @@
+/* ╔════════════════════════════════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ CreArts                                                                                                            ║ */
+/* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ Skin:                    ║ Gruvbox Edition                                                                         ║ */
+/* ║ Author:                  ║ CorellanStoma#1996                                                                      ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ General                  ║ Here you can make general adjustments.                                                  ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+:root {
+  /* Info */
+  --SKIN-skin: "Gruvbox Edition" !important;
+  --SKIN-author: "CorellanStoma" !important;
+  
+  /* Wallpaper */
+  --SKIN-wallpaper: url("") !important;
+  --SKIN-wallpaper-opacity: 1.0 !important;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Dark                     ║ Here you can make general adjustments.                                                  ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-dark {
+/* Lightness */
+--SKIN-lightness: 0% !important;
+
+/* Grading */
+--SKIN-grading-primary: 0% !important;
+--SKIN-grading-secondary: 3% !important;
+--SKIN-grading-tertiary: 6% !important;
+--SKIN-grading-quaternary: 9% !important;
+
+/* Interactive (HSLA) */
+--SKIN-interactive-h: 33 !important;
+--SKIN-interactive-s: 14% !important;
+--SKIN-interactive-l: 59% !important;
+--SKIN-interactive-a: 1.0 !important;
+
+/* Background (HSLA) */
+--SKIN-background-h: 20 !important;
+--SKIN-background-s: 5% !important;
+--SKIN-background-l: 22% !important;
+--SKIN-background-a: 1.0 !important;
+
+/* Accent (HSLA) */
+--SKIN-accent-h: 40 !important;
+--SKIN-accent-s: 97% !important;
+--SKIN-accent-l: 62% !important;
+--SKIN-accent-a: 1.0 !important;
+
+/* Green (HSLA) */
+--SKIN-green-h: 59 !important;
+--SKIN-green-s: 57% !important;
+--SKIN-green-l: 38% !important;
+--SKIN-green-a: 1.0 !important;
+
+/* Yellow (HSLA) */
+--SKIN-yellow-h: 37 !important;
+--SKIN-yellow-s: 69% !important;
+--SKIN-yellow-l: 52% !important;
+--SKIN-yellow-a: 1.0 !important;
+
+/* Red (HSLA) */
+--SKIN-red-h: 2 !important;
+--SKIN-red-s: 75% !important;
+--SKIN-red-l: 46% !important;
+--SKIN-red-a: 1.0 !important;
+
+/* Purple (HSLA) */
+--SKIN-purple-h: 333 !important;
+--SKIN-purple-s: 34% !important;
+--SKIN-purple-l: 54% !important;
+--SKIN-purple-a: 1.0 !important;
+}
