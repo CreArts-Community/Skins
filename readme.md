@@ -1,12 +1,7 @@
 # Skins
 Skins for CreArts Skin System
 
-
-
 ## Communtiy
-
-<details>
-<summary><b>CSS Import Skins</b></summary>
 
 **CreArts**
 ```
@@ -23,13 +18,29 @@ Skins for CreArts Skin System
 **Lavender**
 ```
 @import url("https://crearts-community.github.io/skins/community/lavender.css");
-```
-</details>
-
-## Custom
 
 ## Discord
 
-## Games
+**Default**
+```
+@import url("https://crearts-community.github.io/skins/discord/default.css");
+```
+**Blurple**
+```
+@import url("https://crearts-community.github.io/skins/discord/blurple.css");
+``` 
+**Revamp**
+```
+@import url("https://crearts-community.github.io/skins/discord/revamp.css");
+```
+**Modern**
+```
+@import url("https://crearts-community.github.io/skins/discord/modern.css");
+```
+## Custom
 
 ## Public
+
+## Games
+
+## Anime
