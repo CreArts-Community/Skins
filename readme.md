@@ -46,5 +46,8 @@ working with [CreArts](https://github.com/CreArts-Community/CreArts-Discord) and
 ## Public
 
 ## Games
+```
+@import url("https://crearts-community.github.io/Skins/games/zelda.css");
+```
 
 ## Anime
