@@ -1,0 +1,388 @@
+/**
+ * @name CreArts｜Skins
+ * @version 0.0.1
+ * @author CorellanStoma#1996, Obscure.#4719
+ * @authorLink https://crearts-community.github.io
+ * @description Skins, allows you to load these skins in the normal discord.
+ * @source https://crearts-community.github.io/Skins
+ * @invite 8w8e39z
+*/
+
+/* ╔════════════════════════════════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Discord Add-on                                                                                                     ║ */
+/* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ Name:                    ║ Skins                                                                                   ║ */
+/* ║ Version:                 ║ 0.0.1                                                                                   ║ */
+/* ║ Author:                  ║ CorellanStoma#1996, Obscure.#4719                                                       ║ */
+/* ║ License:                 ║ MIT                                                                                     ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* ✅ Enabled by Default
+/* ⭕ Disabled by Default
+/* 🧪 Experimental
+/* ⚠️ Must be loaded
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ 1.0 Variables            ║ General                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+:root {
+    /* Info */
+    --SKINS-info-version: "v0.0.1";
+    --SKINS-info-loaded: "Skins:" "\00a0" var(--SKINS-info-version, "") "\a";
+
+    --info-skin: var(--SKIN-skin, "Default");
+    --info-author: var(--SKIN-author, "CorellanStoma");
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ 1.1 Variables            ║ Palette                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-dark, .theme-light {
+    /* Lightness (Custom) */
+    --lightness: 0%;
+
+    /* Grading (Custom) */
+    --grading-primary: 0%;
+    --grading-secondary: 3%;
+    --grading-tertiary: 6%;
+    --grading-quaternary: 9%;
+
+    /* Interactive (Custom) */
+    --interactive-h: 216;
+    --interactive-s: 4%;
+    --interactive-l: 74%;
+    --interactive-a: 1.0;
+
+    /* Background (Custom) */
+    --background-h: 220;
+    --background-s: 8%;
+    --background-l: 23%;
+    --background-a: 1.0;
+
+    /* Accent (Custom) */
+    --accent-h: 235;
+    --accent-s: 100%;
+    --accent-l: 71%;
+    --accent-a: 1.0;
+
+    /* Green (Custom) */
+    --green-h: 153;
+    --green-s: 46%;
+    --green-l: 49%;
+    --green-a: 1.0;
+
+    /* Yellow (Custom) */
+    --yellow-h: 38;
+    --yellow-s: 96%;
+    --yellow-l: 54%;
+    --yellow-a: 1.0;
+
+    /* Red (Custom) */
+    --red-h: 0;
+    --red-s: 85%;
+    --red-l: 61%;
+    --red-a: 1.0;
+
+    /* Purple (Custom) */
+    --purple-h: 262;
+    --purple-s: 47%;
+    --purple-l: 40%;
+    --purple-a: 1.0;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ 1.1 Variables            ║ Palette                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-dark, .theme-light {
+    /* Interactive (Default) */
+    --interactive-active: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) + 100% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --interactive-hover: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) + 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --interactive-normal: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --interactive-muted: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+  
+    /* Background (Default) */
+    --background-primary: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - var(--SKIN-grading-primary, var(--grading-primary)) + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --background-secondary: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - var(--SKIN-grading-secondary, var(--grading-secondary)) + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --background-secondary-alt: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - var(--SKIN-grading-tertiary, var(--grading-tertiary)) + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --background-tertiary: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - var(--SKIN--grading-quaternary, var(--grading-quaternary)) + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+  
+    /* Accent (Custom) */
+    --accent-primary: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * var(--SKIN-accent-s, var(--accent-s))), calc(var(--SKIN-accent-l, var(--accent-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-accent-a, var(--accent-a)));
+    --accent-secondary: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * var(--SKIN-accent-s, var(--accent-s))), calc(var(--SKIN-accent-l, var(--accent-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-accent-a, var(--accent-a)));
+    --accent-tertiary: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * var(--SKIN-accent-s, var(--accent-s))), calc(var(--SKIN-accent-l, var(--accent-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-accent-a, var(--accent-a)));
+  
+    /* Green (Custom) */
+    --green-primary: hsla(var(--SKIN-green-h, var(--green-h)), calc(var(--saturation-factor, 1) * var(--SKIN-green-s, var(--green-s))), calc(var(--SKIN-green-l, var(--green-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-green-a, var(--green-a)));
+    --green-secondary: hsla(var(--SKIN-green-h, var(--green-h)), calc(var(--saturation-factor, 1) * var(--SKIN-green-s, var(--green-s))), calc(var(--SKIN-green-l, var(--green-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-green-a, var(--green-a)));
+    --green-tertiary: hsla(var(--SKIN-green-h, var(--green-h)), calc(var(--saturation-factor, 1) * var(--SKIN-green-s, var(--green-s))), calc(var(--SKIN-green-l, var(--green-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-green-a, var(--green-a)));
+  
+    /* Yellow (Custom) */
+    --yellow-primary: hsla(var(--SKIN-yellow-h, var(--yellow-h)), calc(var(--saturation-factor, 1) * var(--SKIN-yellow-s, var(--yellow-s))), calc(var(--SKIN-yellow-l, var(--yellow-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-yellow-a, var(--yellow-a)));
+    --yellow-secondary: hsla(var(--SKIN-yellow-h, var(--yellow-h)), calc(var(--saturation-factor, 1) * var(--SKIN-yellow-s, var(--yellow-s))), calc(var(--SKIN-yellow-l, var(--yellow-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-yellow-a, var(--yellow-a)));
+    --yellow-tertiary: hsla(var(--SKIN-yellow-h, var(--yellow-h)), calc(var(--saturation-factor, 1) * var(--SKIN-yellow-s, var(--yellow-s))), calc(var(--SKIN-yellow-l, var(--yellow-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-yellow-a, var(--yellow-a)));
+  
+    /* Red (Custom) */
+    --red-primary: hsla(var(--SKIN-red-h, var(--red-h)), calc(var(--saturation-factor, 1) * var(--SKIN-red-s, var(--red-s))), calc(var(--SKIN-red-l, var(--red-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-red-a, var(--red-a)));
+    --red-secondary: hsla(var(--SKIN-red-h, var(--red-h)), calc(var(--saturation-factor, 1) * var(--SKIN-red-s, var(--red-s))), calc(var(--SKIN-red-l, var(--red-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-red-a, var(--red-a)));
+    --red-tertiary: hsla(var(--SKIN-red-h, var(--red-h)), calc(var(--saturation-factor, 1) * var(--SKIN-red-s, var(--red-s))), calc(var(--SKIN-red-l, var(--red-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-red-a, var(--red-a)));
+  
+    /* Purple (Custom) */
+    --purple-primary: hsla(var(--SKIN-purple-h, var(--purple-h)), calc(var(--saturation-factor, 1) * var(--SKIN-purple-s, var(--purple-s))), calc(var(--SKIN-purple-l, var(--purple-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-purple-a, var(--purple-a)));
+    --purple-secondary: hsla(var(--SKIN-purple-h, var(--purple-h)), calc(var(--saturation-factor, 1) * var(--SKIN-purple-s, var(--purple-s))), calc(var(--SKIN-purple-l, var(--purple-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-purple-a, var(--purple-a)));
+    --purple-tertiary: hsla(var(--SKIN-purple-h, var(--purple-h)), calc(var(--saturation-factor, 1) * var(--SKIN-purple-s, var(--purple-s))), calc(var(--SKIN-purple-l, var(--purple-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-purple-a, var(--purple-a)));
+  
+    /* Header (Custom) */
+    --header-primary: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) + 100% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --header-secondary: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 10% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+  
+    /* Scrollbar (Default) */
+    --scrollbar-thin-track: transparent;
+    --scrollbar-thin-thumb: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - 9% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --scrollbar-auto-track: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - 6% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --scrollbar-auto-thumb: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - 9% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --scrollbar-auto-scrollbar-color-thumb: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - 9% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+    --scrollbar-auto-scrollbar-color-track: hsla(var(--SKIN-background-h, var(--background-h)), calc(var(--saturation-factor, 1) * var(--SKIN-background-s, var(--background-s))), calc(var(--SKIN-background-l, var(--background-l)) - 9% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-background-a, var(--background-a)));
+  
+    /* Background Modifier (Default) */
+    --background-modifier-hover: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 0% + var(--SKIN-lightness, var(--lightness))), 0.1);
+    --background-modifier-active: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 0% + var(--SKIN-lightness, var(--lightness))), 0.2);
+    --background-modifier-selected: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 0% + var(--SKIN-lightness, var(--lightness))), 0.2);
+    --background-modifier-interactive: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 0% + var(--SKIN-lightness, var(--lightness))), 0.18);
+
+    /* Brand Color */
+    --brand-experiment: var(--accent-primary);
+    --brand-experiment-100: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
+    --brand-experiment-130: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
+    --brand-experiment-160: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
+    --brand-experiment-200: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
+    --brand-experiment-230: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 87%), 91%);
+    --brand-experiment-260: hsl(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
+    --brand-experiment-300: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
+    --brand-experiment-330: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
+    --brand-experiment-360: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+    --brand-experiment-400: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+    --brand-experiment-430: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
+    --brand-experiment-460: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
+    --brand-experiment-500: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+    --brand-experiment-530: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
+    --brand-experiment-560: var(--accent-secondary);
+    --brand-experiment-600: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
+    --brand-experiment-630: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
+    --brand-experiment-660: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    --brand-experiment-700: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 47%), 25.9%);
+    --brand-experiment-730: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+    --brand-experiment-760: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
+    --brand-experiment-800: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
+    --brand-experiment-830: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
+    --brand-experiment-860: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
+    --brand-experiment-900: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 50%), 3.1%);
+    --brand-experiment-05a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.05);
+    --brand-experiment-10a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.1);
+    --brand-experiment-15a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.15);
+    --brand-experiment-20a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.2);
+    --brand-experiment-25a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.25);
+    --brand-experiment-30a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.3);
+    --brand-experiment-35a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.35);
+    --brand-experiment-40a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.4);
+    --brand-experiment-45a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.45);
+    --brand-experiment-50a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.5);
+    --brand-experiment-55a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.55);
+    --brand-experiment-60a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.6);
+    --brand-experiment-65a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.65);
+    --brand-experiment-70a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.7);
+    --brand-experiment-75a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.75);
+    --brand-experiment-80a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.8);
+    --brand-experiment-85a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.85);
+    --brand-experiment-90a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.9);
+    --brand-experiment-95a: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.95);
+  
+    /* Background (Default) */
+    --background-accent: hsl(217, 8%, 34%);
+    --background-floating: hsl(225, 8%, 10%);
+    --background-nested-floating: hsl(223, 7%, 20%);
+    --background-mobile-primary: hsl(220, 8%, 23%);
+    --background-mobile-secondary: hsl(223, 7%, 20%);
+    --background-mentioned: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.1);
+    --background-mentioned-hover: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.08);
+    --background-message-hover: rgba(4, 4, 5, 0.07);
+    --background-message-automod: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.05);
+    --background-message-automod-hover: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);
+    
+    /* Search Popout Option (Default) */
+    --search-popout-option-fade: linear-gradient(90deg, rgba(24, 25, 28, 0), #18191c 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, rgba(54, 57, 63, 0), #36393f 50%);
+    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-username: var(--text-muted);
+    --search-popout-option-filter-text: #72767d;
+    --search-popout-option-non-text-color: #caccce;
+    --search-popout-option-filter-color: #caccce;
+    --search-popout-option-answer-color: #caccce;
+  
+    /* Search Popout Date Picker (Default) */
+    --search-popout-date-picker-border: 1px solid hsla(214, calc(var(--saturation-factor, 1) * 9.1%), 15.1%, 0.3);
+    --search-popout-date-picker-hint-text: #caccce;
+    --search-popout-date-picker-hint-value-text: #fff;
+    --search-popout-date-picker-hint-value-background: var(--brand-experiment);
+    --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
+  
+    /* Toast (Default) */
+    --toast-background: #2f3136;
+    --toast-header: #202225;
+    --toast-contents: #36393f;
+    --toast-box-shadow: rgba(0, 0, 0, 0.2);
+    --toast-border: rgba(28, 36, 43, 0.6);
+  
+    /* Text (Default) */
+    --text-normal: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) + 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --text-muted: hsla(var(--SKIN-interactive-h, var(--interactive-h)), calc(var(--saturation-factor, 1) * var(--SKIN-interactive-s, var(--interactive-s))), calc(var(--SKIN-interactive-l, var(--interactive-l)) - 20% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-interactive-a, var(--interactive-a)));
+    --text-positive: hsl(139, calc(var(--saturation-factor, 1) * 51.6%), 52.2%);
+    --text-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+    --text-danger: hsl(359, calc(var(--saturation-factor, 1) * 82%), 73.9%);
+    --text-brand: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+    --text-link: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * var(--SKIN-accent-s, var(--accent-s))), calc(var(--SKIN-accent-l, var(--accent-l)) - 0% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-accent-a, var(--accent-a)));
+    --text-link-low-saturation: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * var(--SKIN-accent-s, var(--accent-s))), calc(var(--SKIN-accent-l, var(--accent-l)) + 4% + var(--SKIN-lightness, var(--lightness))), var(--SKIN-accent-a, var(--accent-a)));
+  
+    /* Info (Default) */
+    --info-positive-text: #fff;
+    --info-positive-background: hsla(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%, 0.1);
+    --info-positive-foreground: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+    --info-warning-text: #fff;
+    --info-warning-background: hsla(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, 0.1);
+    --info-warning-foreground: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+    --info-danger-text: #fff;
+    --info-danger-background: hsla(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, 0.1);
+    --info-danger-foreground: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+    --info-help-text: #fff;
+    --info-help-background: hsla(197, calc(var(--saturation-factor, 1) * 100%), 47.8%, 0.1);
+    --info-help-foreground: hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);
+  
+  
+    /* Status (Default) */
+    --status-positive: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+    --status-positive-text: #fff;
+    --status-positive-background: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  
+    --status-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+    --status-warning-text: #000;
+    --status-warning-background: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  
+    --status-danger: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+    --status-danger-text: #fff;
+    --status-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  
+    /* Button */
+    --button-danger-background: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+    --button-danger-background-hover: hsl(359, calc(var(--saturation-factor, 1) * 56.3%), 40.4%);
+    --button-danger-background-active: hsl(359, calc(var(--saturation-factor, 1) * 56.4%), 35.1%);
+    --button-danger-background-disabled: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+    --button-positive-background: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    --button-positive-background-hover: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+    --button-positive-background-active: hsl(138, calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
+    --button-positive-background-disabled: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    --button-secondary-background: #4f545c;
+    --button-secondary-background-hover: #686d73;
+    --button-secondary-background-active: #72767d;
+    --button-secondary-background-disabled: #4f545c;
+  
+    /* Button Outline Danger */
+    --button-outline-danger-text: #fff;
+    --button-outline-danger-border: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+    --button-outline-danger-background: hsla(0, 0%, 100%, 0);
+    --button-outline-danger-background-hover: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+    --button-outline-danger-text-hover: #fff;
+    --button-outline-danger-border-hover: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+    --button-outline-danger-background-active: hsl(359, calc(var(--saturation-factor, 1) * 56.7%), 48%);
+    --button-outline-danger-text-active: #fff;
+    --button-outline-danger-border-active: hsl(359, calc(var(--saturation-factor, 1) * 66.7%), 54.1%);
+  
+      /* Button Outline Positive */
+    --button-outline-positive-text: #fff;
+    --button-outline-positive-border: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+    --button-outline-positive-background: hsla(0, 0%, 100%, 0);
+    --button-outline-positive-background-hover: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    --button-outline-positive-text-hover: #fff;
+    --button-outline-positive-border-hover: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    --button-outline-positive-background-active: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+    --button-outline-positive-text-active: #fff;
+    --button-outline-positive-border-active: hsl(138, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+  
+      /* Button Outline Brand */
+    --button-outline-brand-text: #fff;
+    --button-outline-brand-border: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+    --button-outline-brand-background: hsla(0, 0%, 100%, 0);
+    --button-outline-brand-background-hover: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+    --button-outline-brand-text-hover: #fff;
+    --button-outline-brand-border-hover: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+    --button-outline-brand-background-active: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+    --button-outline-brand-text-active: #fff;
+    --button-outline-brand-border-active: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+  
+      /* Button Outline Primary */
+    --button-outline-primary-text: #fff;
+    --button-outline-primary-border: #4f545c;
+    --button-outline-primary-background: hsla(0, 0%, 100%, 0);
+    --button-outline-primary-background-hover: #4f545c;
+    --button-outline-primary-text-hover: #fff;
+    --button-outline-primary-border-hover: #4f545c;
+    --button-outline-primary-background-active: #686d73;
+    --button-outline-primary-text-active: #fff;
+    --button-outline-primary-border-active: #686d73;
+  
+    /* Modal */
+    --modal-background: #36393f;
+    --modal-footer-background: #2f3136;
+  
+    /* Input */
+    --input-background: var(--background-tertiary);
+    --input-placeholder-text: hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%);
+  
+    /* Elevation */
+    --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
+    --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+  
+    /* Spoiler */
+    --spoiler-revealed-background: #292b2f;
+    --spoiler-hidden-background: #202225;
+  
+    /* Deprecated */
+    --deprecated-card-bg: rgba(32, 34, 37, 0.6);
+    --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-quickswitcher-input-background: #72767d;
+    --deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
+    --deprecated-text-input-bg: #202225;
+    --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+  
+    /* Control Brand */
+    --control-brand-foreground: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+    --control-brand-foreground-new: hsla(var(--SKIN-accent-h, var(--accent-h)), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+  
+    /* Chat */
+    --chat-background: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
+    --chat-border: hsl(216,calc(var(--saturation-factor, 1)*7.2%),13.5%);
+    --chat-input-container-background: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
+  
+    /* Channels */
+    --channel-icon: var(--interactive-normal);
+    --channels-default: var(--interactive-normal);
+    --channel-text-area-placeholder: #72767d;
+  
+    /* Other */
+    --logo-primary: #fff;
+    --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    --channeltextarea-background: #40444b;
+    --activity-card-background: #202225;
+    --textbox-markdown-syntax: var(--interactive-normal);
+  
+    --focus-primary: var(--accent-primary);
+  
+    --background-modifier-accent: var(--background-primary);
+  }
