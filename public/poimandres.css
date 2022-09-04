@@ -25,7 +25,7 @@
 
 .theme-dark {
 /* Lightness */
---SKIN-lightness: 6% !important;
+--SKIN-lightness: 0% !important;
 
 /* Grading */
 --SKIN-grading-primary: 0% !important;
